@@ -15,6 +15,15 @@ header {
     text-align: center;
 }
 
+.header-logo {
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    margin-top: 10px; /* Espacio entre el texto y el logo */
+    display: block; /* Para centrar el logo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header .logo h1 {
     margin: 0;
     font-size: 2rem;
