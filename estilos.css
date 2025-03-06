@@ -53,25 +53,10 @@ nav ul li a {
     margin-right: auto;
 }
 
-/* Media Queries para móviles */
 @media (max-width: 768px) {
-    header .logo h1 {
-        font-size: 1.5rem;
-    }
-
-    nav ul {
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan en móviles */
-        gap: 0.5rem; /* Espacio entre elementos */
-        justify-content: center; /* Centra los elementos */
-    }
-
-    nav ul li {
-        margin: 0; /* Elimina el margen horizontal */
-    }
-
     nav ul li a {
-        font-size: 0.875rem; /* Reduce el tamaño de la fuente en móviles */
-        padding: 0.5rem; /* Añade padding para facilitar el toque */
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        padding: 0.3rem; /* Menos padding */
     }
 }
 
