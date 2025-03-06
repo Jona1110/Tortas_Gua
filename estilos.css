@@ -445,3 +445,35 @@ footer {
         display: flex;
     }
 }
+
+/*-------------------------------------------Video-------------------------------------*/
+.video-presentacion {
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.video-presentacion h2 {
+  font-size: 1.8rem;
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+.video-presentacion p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
