@@ -6,6 +6,8 @@ body {
     background-color: #f8f8f8;
     color: #333;
     font-size: 1rem; /* Tamaño base para responsividad */
+    min-width: 1200px; /* Ancho mínimo para forzar el modo de escritorio */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
 }
 
 header {
