@@ -312,6 +312,15 @@ footer {
         font-size: 1.5rem;
     }
 
+    nav ul {
+        flex-direction: column; /* Apila los elementos en móviles */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Espacio entre elementos en móviles */
+    }
+}
+
     .hero-content h2 {
         font-size: 1.5rem;
     }
