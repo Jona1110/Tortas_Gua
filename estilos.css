@@ -15,15 +15,6 @@ header {
     text-align: center;
 }
 
-.header-logo {
-    width: 150px; /* Ajusta el tamaño del logo */
-    height: auto; /* Mantiene la proporción */
-    margin-top: 10px; /* Espacio entre el texto y el logo */
-    display: block; /* Para centrar el logo */
-    margin-left: auto;
-    margin-right: auto;
-}
-
 header .logo h1 {
     margin: 0;
     font-size: 2rem;
@@ -50,6 +41,30 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila los elementos en móviles */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Espacio entre elementos en móviles */
+    }
 }
 
 .hero {
