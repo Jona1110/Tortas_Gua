@@ -1,296 +1,317 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
-  }
-  
-  header {
+    font-size: 1rem; /* Tamaño base para responsividad */
+}
+
+header {
     background-color: #d35400;
     color: white;
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
     text-align: center;
-  }
-  
-  header .logo h1 {
+}
+
+header .logo h1 {
     margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  header .logo p {
+    font-size: 2rem; /* Reducido para móviles */
+}
+
+header .logo p {
     margin: 0;
-    font-size: 1.2rem;
-  }
-  
-  nav ul {
+    font-size: 1rem; /* Reducido para móviles */
+}
+
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    margin: 20px 0 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
+    margin: 1.25rem 0 0; /* 20px */
+}
+
+nav ul li {
+    margin: 0 1rem; /* 16px */
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .hero {
+}
+
+.hero {
     background: url('hero.jpg') no-repeat center center/cover;
-    height: 400px;
+    height: 25rem; /* 400px */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-  }
-  .hero-content h2 {
-    font-size: 3rem;
+}
+
+.hero-content h2 {
+    font-size: 2rem; /* Reducido para móviles */
     margin: 0;
-    color: black !important; /* Fuerza el color negro */
-  }
-  
-  .hero-content p {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: black !important; /* Fuerza el color negro */
-  }
-  .btn {
+    color: black !important;
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* Reducido para móviles */
+    margin: 0.625rem 0; /* 10px */
+    color: black !important;
+}
+
+.btn {
     background-color: #e67e22;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .menu, .about, .contact {
-    padding: 40px 20px;
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.menu, .about, .contact, .horarios, .ubicacion {
+    padding: 2.5rem 1.25rem; /* 40px 20px */
     text-align: center;
-  }
-  
-  .menu h2, .about h2, .contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .menu-items {
+}
+
+.menu h2, .about h2, .contact h2, .horarios h2, .ubicacion h2 {
+    font-size: 2rem; /* Reducido para móviles */
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.menu-items {
     display: flex;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en móviles */
     justify-content: center;
-    gap: 20px;
-  }
-  
-  .menu-items .item {
+    gap: 1.25rem; /* 20px */
+}
+
+.menu-items .item {
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-items .item img {
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+    flex: 1 1 18.75rem; /* Flexibilidad para móviles */
+    max-width: 18.75rem; /* 300px */
+}
+
+.menu-items .item img {
     width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
-  }
-  
-  .contact form {
+    max-width: 12.5rem; /* 200px */
+    border-radius: 0.625rem; /* 10px */
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .contact form input, .contact form textarea {
+}
+
+.contact form input, .contact form textarea {
     width: 100%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 10px 0;
+    max-width: 25rem; /* 400px */
+    padding: 0.625rem; /* 10px */
+    margin: 0.625rem 0; /* 10px */
     border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact form button {
+    border-radius: 0.3125rem; /* 5px */
+}
+
+.contact form button {
     background-color: #e67e22;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem; /* 5px */
     cursor: pointer;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-  }
+    padding: 1.25rem; /* 20px */
+}
 
 /*--------------------------------Logo---------------------------------------*/
+.hero-logo, .footer-logo {
+    height: 9.375rem; /* 150px */
+    width: auto;
+    margin-bottom: 1.25rem; /* 20px */
+}
 
-  .hero-logo {
-    height: 150px; /* Ajusta el tamaño según tu logo */
-    width: auto; /* Mantiene la proporción */
-    margin-bottom: 20px; /* Espacio entre el logo y el texto */
-  }
+.logo img {
+    border-radius: 3.125rem; /* 50px */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px 10px */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .footer-logo {
-    height: 150px; /* Ajusta el tamaño según tu logo */
-    width: auto; /* Mantiene la proporción */
-    margin-bottom: 10px; /* Espacio entre el logo y el texto */
-  }
+.logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.3); /* 6px 15px */
+}
 
-  .logo img {
-    border-radius: 50px; /* Ajusta el valor para más o menos redondez */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  }
+.floating-logo {
+    position: fixed;
+    bottom: 1.25rem; /* 20px */
+    right: 1.25rem; /* 20px */
+    z-index: 1000;
+}
 
-  .floating-logo {
-    position: fixed; /* Fija el logo en la pantalla */
-    bottom: 20px; /* Distancia desde la parte inferior */
-    right: 20px; /* Distancia desde la derecha */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
-  }
-  
-  .floating-logo img {
-    height: 60px; /* Ajusta el tamaño según tu logo */
-    width: auto; /* Mantiene la proporción */
-    opacity: 0.8; /* Hace el logo un poco transparente */
-    transition: opacity 0.3s ease; /* Efecto de transición */
-  }
-  
-  .floating-logo img:hover {
-    opacity: 1; /* Opacidad completa al pasar el mouse */
-  }
+.floating-logo img {
+    height: 3.75rem; /* 60px */
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
 
-  .logo img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-  }
-  
-  .logo img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño un 10% */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-  }
+.floating-logo img:hover {
+    opacity: 1;
+}
 
-  /*--------------------------------------Mapa-------------------------------------*/
-
-  .ubicacion {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f8f8f8; /* Fondo claro para resaltar la sección */
-  }
-  
-  .ubicacion h2 {
-    font-size: 2.5rem;
-    color: #d35400; /* Color naranja para el título */
-    margin-bottom: 20px;
-  }
-  
-  .ubicacion p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-  }
-  
-  .mapa {
-    margin-top: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta el desbordamiento del iframe */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  }
-
-  /*--------------------------Contacto---------------------------------*/
-
-  .contact {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .contact h2 {
-    font-size: 2.5rem;
-    color: #d35400;
-    margin-bottom: 20px;
-  }
-  
-  .contact p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-  }
-  
-  .redes-sociales {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .social-icon img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icon:hover img {
-    transform: scale(1.2);
-  }
-
-  /*-------------------------------------Fuente-------------------------------*/
-
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-
-  /*-------------------------Horarios--------------------------------------*/
-  .horarios {
-    padding: 40px 20px;
+/*--------------------------------------Mapa-------------------------------------*/
+.ubicacion {
+    padding: 2.5rem 1.25rem; /* 40px 20px */
     text-align: center;
     background-color: #f8f8f8;
-  }
-  
-  .horarios h2 {
-    font-size: 2.5rem;
+}
+
+.ubicacion h2 {
+    font-size: 2rem; /* Reducido para móviles */
     color: #d35400;
-    margin-bottom: 20px;
-  }
-  
-  .horarios p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-  }
-  
-  .tabla-horarios {
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.ubicacion p {
+    font-size: 1rem; /* Reducido para móviles */
+    margin: 0.625rem 0; /* 10px */
+}
+
+.mapa {
+    margin-top: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px 10px */
+}
+
+.mapa iframe {
     width: 100%;
-    max-width: 600px;
+    height: 18.75rem; /* 300px */
+}
+
+/*--------------------------Contacto---------------------------------*/
+.contact {
+    padding: 2.5rem 1.25rem; /* 40px 20px */
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem; /* Reducido para móviles */
+    color: #d35400;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.contact p {
+    font-size: 1rem; /* Reducido para móviles */
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem; /* 20px */
+}
+
+.social-icon img {
+    width: 3.125rem; /* 50px */
+    height: 3.125rem; /* 50px */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+/*-------------------------Horarios--------------------------------------*/
+.horarios {
+    padding: 2.5rem 1.25rem; /* 40px 20px */
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.horarios h2 {
+    font-size: 2rem; /* Reducido para móviles */
+    color: #d35400;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.horarios p {
+    font-size: 1rem; /* Reducido para móviles */
+    margin-bottom: 1.875rem; /* 30px */
+}
+
+.tabla-horarios {
+    width: 100%;
+    max-width: 37.5rem; /* 600px */
     margin: 0 auto;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 4px 10px */
+    border-radius: 0.625rem; /* 10px */
     overflow: hidden;
-  }
-  
-  .tabla-horarios th, .tabla-horarios td {
-    padding: 15px;
+}
+
+.tabla-horarios th, .tabla-horarios td {
+    padding: 0.9375rem; /* 15px */
     text-align: center;
-  }
-  
-  .tabla-horarios th {
+}
+
+.tabla-horarios th {
     background-color: #e67e22;
     color: white;
     font-weight: bold;
-  }
-  
-  .tabla-horarios td {
+}
+
+.tabla-horarios td {
     border-bottom: 1px solid #ddd;
-  }
-  
-  .tabla-horarios tr:last-child td {
+}
+
+.tabla-horarios tr:last-child td {
     border-bottom: none;
-  }
-  
-  .tabla-horarios tr:hover {
+}
+
+.tabla-horarios tr:hover {
     background-color: #f5f5f5;
-  }
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 1.5rem; /* Más pequeño para móviles */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem; /* Más pequeño para móviles */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Más pequeño para móviles */
+    }
+
+    .menu-items .item {
+        flex: 1 1 100%; /* Ocupa todo el ancho en móviles */
+        max-width: 100%;
+    }
+
+    .mapa iframe {
+        height: 12.5rem; /* 200px */
+    }
+
+    .tabla-horarios {
+        font-size: 0.875rem; /* 14px */
+    }
+}
