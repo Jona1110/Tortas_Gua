@@ -5,26 +5,24 @@ body {
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
-    font-size: 1rem; /* Tamaño base para responsividad */
-    min-width: 1200px; /* Ancho mínimo para forzar el modo de escritorio */
-    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    font-size: 1rem;
 }
 
 header {
     background-color: #d35400;
     color: white;
-    padding: 1.25rem; /* 20px */
+    padding: 1.25rem;
     text-align: center;
 }
 
 header .logo h1 {
     margin: 0;
-    font-size: 2rem; /* Reducido para móviles */
+    font-size: 2rem;
 }
 
 header .logo p {
     margin: 0;
-    font-size: 1rem; /* Reducido para móviles */
+    font-size: 1rem;
 }
 
 nav ul {
@@ -32,11 +30,11 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    margin: 1.25rem 0 0; /* 20px */
+    margin: 1.25rem 0 0;
 }
 
 nav ul li {
-    margin: 0 1rem; /* 16px */
+    margin: 0 1rem;
 }
 
 nav ul li a {
@@ -44,81 +42,69 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+
 .hero {
     background: url('hero.jpg') no-repeat center center/cover;
-    height: 50vh; /* Altura relativa al viewport */
-    min-height: 300px; /* Altura mínima para móviles */
+    height: 50vh;
+    min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 2rem 1rem; /* Padding para pantallas grandes */
+    padding: 2rem 1rem;
 }
 
 .hero-content h2 {
-    font-size: 2rem; /* Tamaño para pantallas grandes */
+    font-size: 2rem;
     margin: 0;
     color: black !important;
 }
 
 .hero-content p {
-    font-size: 1.25rem; /* Tamaño para pantallas grandes */
-    margin: 0.625rem 0; /* 10px */
+    font-size: 1.25rem;
+    margin: 0.625rem 0;
     color: black !important;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        padding: 1rem 0.5rem; /* Padding reducido para móviles */
-    }
-
-    .hero-content h2 {
-        font-size: 1.5rem; /* Tamaño más pequeño para móviles */
-    }
-
-    .hero-content p {
-        font-size: 1rem; /* Tamaño más pequeño para móviles */
-    }
-}
 .btn {
     background-color: #e67e22;
     color: white;
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 0.3125rem;
 }
 
 .menu, .about, .contact, .horarios, .ubicacion {
-    padding: 2.5rem 1.25rem; /* 40px 20px */
+    padding: 2.5rem 1.25rem;
     text-align: center;
 }
 
 .menu h2, .about h2, .contact h2, .horarios h2, .ubicacion h2 {
-    font-size: 2rem; /* Reducido para móviles */
-    margin-bottom: 1.25rem; /* 20px */
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .menu-items {
     display: flex;
-    flex-wrap: wrap; /* Para que los elementos se envuelvan en móviles */
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.25rem; /* 20px */
+    gap: 1.25rem;
 }
 
 .menu-items .item {
     background-color: white;
-    padding: 1.25rem; /* 20px */
-    border-radius: 0.625rem; /* 10px */
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
-    flex: 1 1 18.75rem; /* Flexibilidad para móviles */
-    max-width: 18.75rem; /* 300px */
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    flex: 1 1 18.75rem;
+    max-width: 18.75rem;
 }
 
 .menu-items .item img {
     width: 100%;
-    max-width: 12.5rem; /* 200px */
-    border-radius: 0.625rem; /* 10px */
+    max-width: 12.5rem;
+    border-radius: 0.625rem;
 }
 
 .contact form {
@@ -129,19 +115,19 @@ nav ul li a {
 
 .contact form input, .contact form textarea {
     width: 100%;
-    max-width: 25rem; /* 400px */
-    padding: 0.625rem; /* 10px */
-    margin: 0.625rem 0; /* 10px */
+    max-width: 25rem;
+    padding: 0.625rem;
+    margin: 0.625rem 0;
     border: 1px solid #ccc;
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 0.3125rem;
 }
 
 .contact form button {
     background-color: #e67e22;
     color: white;
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 0.3125rem;
     cursor: pointer;
 }
 
@@ -149,36 +135,36 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1.25rem; /* 20px */
+    padding: 1.25rem;
 }
 
 /*--------------------------------Logo---------------------------------------*/
 .hero-logo, .footer-logo {
-    height: 9.375rem; /* 150px */
+    height: 9.375rem;
     width: auto;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem;
 }
 
 .logo img {
-    border-radius: 3.125rem; /* 50px */
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px 10px */
+    border-radius: 3.125rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.3); /* 6px 15px */
+    box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.3);
 }
 
 .floating-logo {
     position: fixed;
-    bottom: 1.25rem; /* 20px */
-    right: 1.25rem; /* 20px */
+    bottom: 1.25rem;
+    right: 1.25rem;
     z-index: 1000;
 }
 
 .floating-logo img {
-    height: 3.75rem; /* 60px */
+    height: 3.75rem;
     width: auto;
     opacity: 0.8;
     transition: opacity 0.3s ease;
@@ -190,61 +176,61 @@ footer {
 
 /*--------------------------------------Mapa-------------------------------------*/
 .ubicacion {
-    padding: 2.5rem 1.25rem; /* 40px 20px */
+    padding: 2.5rem 1.25rem;
     text-align: center;
     background-color: #f8f8f8;
 }
 
 .ubicacion h2 {
-    font-size: 2rem; /* Reducido para móviles */
+    font-size: 2rem;
     color: #d35400;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem;
 }
 
 .ubicacion p {
-    font-size: 1rem; /* Reducido para móviles */
-    margin: 0.625rem 0; /* 10px */
+    font-size: 1rem;
+    margin: 0.625rem 0;
 }
 
 .mapa {
-    margin-top: 1.25rem; /* 20px */
-    border-radius: 0.625rem; /* 10px */
+    margin-top: 1.25rem;
+    border-radius: 0.625rem;
     overflow: hidden;
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px 10px */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 .mapa iframe {
     width: 100%;
-    height: 18.75rem; /* 300px */
+    height: 18.75rem;
 }
 
 /*--------------------------Contacto---------------------------------*/
 .contact {
-    padding: 2.5rem 1.25rem; /* 40px 20px */
+    padding: 2.5rem 1.25rem;
     text-align: center;
     background-color: #fff;
 }
 
 .contact h2 {
-    font-size: 2rem; /* Reducido para móviles */
+    font-size: 2rem;
     color: #d35400;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem;
 }
 
 .contact p {
-    font-size: 1rem; /* Reducido para móviles */
-    margin-bottom: 1.875rem; /* 30px */
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
 }
 
 .redes-sociales {
     display: flex;
     justify-content: center;
-    gap: 1.25rem; /* 20px */
+    gap: 1.25rem;
 }
 
 .social-icon img {
-    width: 3.125rem; /* 50px */
-    height: 3.125rem; /* 50px */
+    width: 3.125rem;
+    height: 3.125rem;
     transition: transform 0.3s ease;
 }
 
@@ -254,35 +240,35 @@ footer {
 
 /*-------------------------Horarios--------------------------------------*/
 .horarios {
-    padding: 2.5rem 1.25rem; /* 40px 20px */
+    padding: 2.5rem 1.25rem;
     text-align: center;
     background-color: #f8f8f8;
 }
 
 .horarios h2 {
-    font-size: 2rem; /* Reducido para móviles */
+    font-size: 2rem;
     color: #d35400;
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1.25rem;
 }
 
 .horarios p {
-    font-size: 1rem; /* Reducido para móviles */
-    margin-bottom: 1.875rem; /* 30px */
+    font-size: 1rem;
+    margin-bottom: 1.875rem;
 }
 
 .tabla-horarios {
     width: 100%;
-    max-width: 37.5rem; /* 600px */
+    max-width: 37.5rem;
     margin: 0 auto;
     border-collapse: collapse;
     background-color: white;
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* 4px 10px */
-    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.625rem;
     overflow: hidden;
 }
 
 .tabla-horarios th, .tabla-horarios td {
-    padding: 0.9375rem; /* 15px */
+    padding: 0.9375rem;
     text-align: center;
 }
 
@@ -307,27 +293,49 @@ footer {
 /* Media Queries para móviles */
 @media (max-width: 768px) {
     header .logo h1 {
-        font-size: 1.5rem; /* Más pequeño para móviles */
+        font-size: 1.5rem;
     }
 
     .hero-content h2 {
-        font-size: 1.5rem; /* Más pequeño para móviles */
+        font-size: 1.5rem;
     }
 
     .hero-content p {
-        font-size: 1rem; /* Más pequeño para móviles */
+        font-size: 1rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
     }
 
     .menu-items .item {
-        flex: 1 1 100%; /* Ocupa todo el ancho en móviles */
         max-width: 100%;
     }
 
     .mapa iframe {
-        height: 12.5rem; /* 200px */
+        height: 12.5rem;
     }
 
     .tabla-horarios {
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #d35400;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
