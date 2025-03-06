@@ -42,29 +42,36 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
 .hero {
     background: url('hero.jpg') no-repeat center center/cover;
-    height: 25rem; /* 400px */
+    height: 50vh; /* Altura relativa al viewport */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
 }
-
 .hero-content h2 {
-    font-size: 2rem; /* Reducido para móviles */
+    font-size: 2rem; /* Tamaño para pantallas grandes */
     margin: 0;
     color: black !important;
 }
 
 .hero-content p {
-    font-size: 1.25rem; /* Reducido para móviles */
+    font-size: 1.25rem; /* Tamaño para pantallas grandes */
     margin: 0.625rem 0; /* 10px */
     color: black !important;
 }
 
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 1.5rem; /* Tamaño más pequeño para móviles */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Tamaño más pequeño para móviles */
+    }
+}
 .btn {
     background-color: #e67e22;
     color: white;
