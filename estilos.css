@@ -470,10 +470,44 @@ footer {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 video {
   width: 100%;
   height: auto;
   display: block;
+}
+
+#play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#play-button:hover {
+  background-color: #d35400;
+}
+
+@media (max-width: 768px) {
+  .video-presentacion h2 {
+    font-size: 1.5rem;
+  }
+
+  .video-presentacion p {
+    font-size: 0.9rem;
+  }
+
+  .video-container {
+    border-radius: 0;
+  }
 }
