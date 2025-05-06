@@ -508,6 +508,23 @@ video {
   }
 
   .video-container {
+/*---------------------------------Menu-----------------------------------*/
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos del menú */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Opcional: centra el menú */
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black; /* Puedes cambiar el color */
+  font-weight: bold;
+}
+
     border-radius: 0;
   }
 }
